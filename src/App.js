@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CustomButton from './state/subscribe';
+
 
 function App() {
   return (
-    
+    <CustomButton/>
   );
 }
 
