@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+// here created counter and subscribe button form by state and setstate..............
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
