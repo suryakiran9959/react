@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Loader from './component life/loader';
+import ProductListing from './component life/one';
 
 function App() {
   return (
     <>
+    <ProductListing/>
     
     </>
   );

@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:20px;
+    text-align: center;
+    justify-content: space-around;
+}
+.child{
+    width:30%;
+    border: 2px solid black;
+    border-radius:15px;
+    padding:7px;
+}
+.child:hover{
+    /* scale:1.04; */
+    transform: rotatey(30deg);
+    background-color:palegreen;
+    
+}
