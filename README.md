@@ -1,3 +1,13 @@
+life cycle phases
+1.Mounting phase
+2.Updating phase 
+3.Unmounting phase
+
+all methods in this phases examples done 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
