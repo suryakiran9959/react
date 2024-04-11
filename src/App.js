@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import UnMounting from './life cycle/unMounting';
 
 function App() {
   return (
     <>
-    
+    <UnMounting/>
     </>
   );
 }
