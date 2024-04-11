@@ -1,3 +1,19 @@
+created a axios method and fetched the data from api and created a div showcased the products as cards ....
+..............4/4/24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
