@@ -17,11 +17,17 @@ fetchData=async()=>{
         products:result.data.products
     })
 }
-
+filterLowToHigh=()=>{
+    const result=this.state.products.sort((a,b)=>a.price-b.price)
+    this.setState({
+        products:result
+    })
+}
 render(){
     return(
         <>
         <h1 style={{textAlign:"center",backgroundColor:"blueviolet"}}>Product listing</h1>
+        <button onClick={this.filterLowToHigh}>Filter From Low to High</button>
         {
             this.state.products.length>0
             ?
