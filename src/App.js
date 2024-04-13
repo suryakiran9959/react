@@ -1,10 +1,15 @@
 
 import './App.css';
+import UnControlledInput from './forms/unControlled';
+
+
+
 
 function App() {
   return (
     <>
-    
+<UnControlledInput/>
+   
     </>
   );
 }
