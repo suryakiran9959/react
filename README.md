@@ -1,3 +1,13 @@
+class based components pure components
+
+diff b/w class and functional based components
+
+6/4/24 --- 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

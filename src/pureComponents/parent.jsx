@@ -1,6 +1,4 @@
 import Child from "./children";
-
-
 const { Component} = require("react");
 
 class Parent extends Component{
@@ -13,7 +11,6 @@ class Parent extends Component{
         })
     }
     render(){
-       
         return(
             <>
             <h2>{this.state.count}</h2>
