@@ -1,7 +1,10 @@
+life cycle methods
 created a axios method and fetched the data from api and created a div showcased the products as cards ....
 ..............4/4/24
 
 applied lowToHigh filter button....
+
+
 
 
 
