@@ -1,3 +1,16 @@
+Controlled components ,,
+
+1.by taking each field and validating old method (index.jsx)
+2.in one function taking all the field and validating easier method (look out carefully)
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
