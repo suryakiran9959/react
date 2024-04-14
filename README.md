@@ -1,7 +1,8 @@
 Controlled components ,,
 
 1.by taking each field and validating old method (index.jsx)
-2.in one function taking all the field and validating easier method (look out carefully)
+
+2.in one function taking all the field and validating easier method (look out carefully) file(controlledexp2)
 
 
 
