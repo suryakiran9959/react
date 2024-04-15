@@ -6,13 +6,13 @@ const UseStateExp3=()=>{
     const [isRunning,setIsRunning]=useState(false)
 
     const startTimer=()=>{ 
-    if(!isRunning){
+    
      const time=setInterval(()=>{
         setTimer(preTime=>preTime-1)
         },1000)
        setReset(time)
        setIsRunning(true)
-    }
+    
 }
 const stopTimer=()=>{
     clearInterval(reset)
@@ -39,5 +39,3 @@ const resetTimer=()=>{
     )
 }
 export default UseStateExp3
-
-
