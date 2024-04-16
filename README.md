@@ -1,3 +1,19 @@
+objects1.jsx ------------ forms data when we enter or change data it will be shown on ui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

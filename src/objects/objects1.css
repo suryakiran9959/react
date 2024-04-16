@@ -1,0 +1,16 @@
+.Forms{
+   background-color:cornflowerblue;
+   border: 1px solid black;
+   text-align: center;
+   margin: auto;
+   height: 200px;
+   width: 300px;
+   gap: 60px;
+   
+  
+   
+}
+.p{
+    color: blue;
+    text-align: center;
+}
