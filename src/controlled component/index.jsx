@@ -17,7 +17,6 @@ else{
     setUserNameError(null)
 }
 
-
 console.log(userName);
 }
 
@@ -55,7 +54,6 @@ const handleSubmit=(event)=>{
         <button type="submit">Submit</button>
 
         </form>
-        
         </>
     )
 }
