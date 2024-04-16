@@ -3,34 +3,54 @@ import axios from "axios"
 
 const UseEffect =()=>{
     const [productListing,setProductListing]=useState([])
-    const [count,setCount]=useState(0)
-    const [age,setAge]=useState(20)
+    const [singleObj,setSingleObj]=useState({})
+    const [count,setCount]=useState(1)
 
     useEffect(()=>{
-        console.log("useEffect renders");
         products()  
     },[])
 
+    useEffect(()=>{
+        eachProduct()
+    },[count])
+
     const products=async()=>{
         const response=await axios.get("https://dummyjson.com/products")
-        console.log(response);
         setProductListing(response.data.products)
+        console.log(response);
     }
 
-    const incrementCount=()=>{
-        setCount(count+1)
-    }
-    const incrementAge=()=>{
-        setAge(age+999)
+    const eachProduct = async()=>{
+        const eachObj=await axios.get(`https://dummyjson.com/products/${count}`)
+        setSingleObj(eachObj.data);
+        console.log(eachObj);
+        
     }
 
+    // const incrementCount=()=>{
+    //     setCount(count+1)
+    // }
+
+    const clickHandler=(e)=>{
+        setCount(e.target.value)
+    }
+    
     return(
     <>
-    <h1>Use Effect Example-1</h1>
-    <h1>Count:{count}</h1>
-    <button onClick={incrementCount}>Increment</button>
-    <h1>Age:{age}</h1>
-    <button onClick={incrementAge}>Increment</button>
+    <h1>Use Effect Example1</h1>
+    {
+        productListing.map((eachItem)=>{
+            const {id}=eachItem
+            return(
+                <button key={id} value={id} onClick={clickHandler}>{eachItem.id}</button>
+            )
+        })
+    }
+    <div className="img">
+    <img src={singleObj.images[0]} alt="" />
+    </div>
+   
+
     </>
     )
 }
