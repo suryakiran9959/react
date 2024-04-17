@@ -1,5 +1,5 @@
 
-import './App.css';
+
 import NavigationStack from './navigationStack/main';
 
 function App() {
