@@ -23,11 +23,20 @@ filterLowToHigh=()=>{
         products:result
     })
 }
+filterHighToLow=()=>{
+    const result=this.state.products.sort((a,b)=>b.price-a.price)
+    this.setState({
+        products:result
+    })
+}
+
+
 render(){
     return(
         <>
         <h1 style={{textAlign:"center",backgroundColor:"blueviolet"}}>Product listing</h1>
         <button onClick={this.filterLowToHigh}>Filter From Low to High</button>
+        <button onClick={this.filterHighToLow}>Filter from high to low</button>
         {
             this.state.products.length>0
             ?
@@ -40,6 +49,8 @@ render(){
                         <h4>{eachObject.description}</h4>
                         <img src={eachObject.thumbnail}alt="img" width={200} height={200} />
                         <h3 style={{color:"red"}}>₹{eachObject.price}</h3>
+                        <button>Add</button>
+                        
                         </div>
                     )
                 })

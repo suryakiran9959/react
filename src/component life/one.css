@@ -14,8 +14,8 @@
     padding:7px;
 }
 .child:hover{
-    /* scale:1.04; */
-    transform: rotatey(30deg);
+    scale:1.04;
+    /* transform: rotatey(30deg); */
     background-color:palegreen;
     
 }
