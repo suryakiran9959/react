@@ -4,7 +4,7 @@ const About=()=>{
 return(
     <>
     <Header/>
-    <h1>WELCOME HERE ABOUT</h1>
+    <h1 style={{textAlign:"center"}}>WELCOME HERE ABOUT</h1>
     </>
 )
 }

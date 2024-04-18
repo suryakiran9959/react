@@ -8,8 +8,8 @@ function ErrorPage(){
     }
     return(
         <>
-        <h1>Error</h1>
-        <button onClick={errorNavigate}>Back to Home..</button>
+        <h1 style={{textAlign:"center"}}>Error</h1>
+        <button onClick={errorNavigate} >Back to Home..</button>
         </>
     )
 }
