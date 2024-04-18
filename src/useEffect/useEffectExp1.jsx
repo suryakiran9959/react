@@ -27,9 +27,6 @@ const UseEffect =()=>{
         
     }
 
-    // const incrementCount=()=>{
-    //     setCount(count+1)
-    // }
 
     const clickHandler=(e)=>{
         setCount(e.target.value)
@@ -47,10 +44,9 @@ const UseEffect =()=>{
         })
     }
     <div className="img">
-    <img src={singleObj.images[0]} alt="" />
+    <img src={singleObj.thumbnail} alt="" />
     </div>
    
-
     </>
     )
 }
