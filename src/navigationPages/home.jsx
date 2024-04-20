@@ -2,10 +2,12 @@ import { useEffect, useState } from "react"
 import Header from "../bootstrapHeader/header"
 import axios from "axios"
 import "./home.css"
+import GrowExample from "./spinner"
+
 
 const Home=()=>{
     const[data,setData]=useState([])
-    const [condition,setCondition]=useState(false)
+    
 
     useEffect(()=>{
         fetchData()
@@ -19,11 +21,18 @@ const Home=()=>{
 
     return(
         <>
+       <Header/>
+
        
-        <h1 style={{textAlign:"center"}}>WELCOME HOME</h1>
         
+        {data.length>0 
+
+         ?
+         <>
+         <h1 className="welcome">WELCOME HOME</h1>
         <div className="main">
         {
+            
             data.map(eachObj=>{
                 const{id,name,image,servings}=eachObj
                 return(
@@ -35,9 +44,14 @@ const Home=()=>{
                 )
 
             })
+            
         }
-        </div>
        
+        </div>
+        </>
+        :
+        <GrowExample/>
+    }   
         </>
     )
 }
