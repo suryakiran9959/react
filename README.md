@@ -1,7 +1,7 @@
-here 
-
-taken stack and linked to two pages,
-from bootstrap we taken the header and given names by clicking names we can route from one page to another
+created dynamic routing by basing on changing value like id..
+useParams to collect the data
+route and link used 
+task done i.e viewing the product details..
 
 
 

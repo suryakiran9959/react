@@ -2,7 +2,7 @@
     margin-top:20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -11,13 +11,13 @@
 .child{
     border: 2px solid black;
     text-align: center;
-    height:420px;
-    width:420px;
+    height:320px;
+    width:320px;
     padding:10px;
-    border-radius: 10px;
+    border-radius:10px;
 }
 .child:hover{
-    scale:0.93;
+   
     background-color: thistle;
 }
 .welcome{
