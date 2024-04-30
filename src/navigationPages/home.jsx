@@ -23,8 +23,6 @@ const Home=()=>{
         <>
        <Header/>
 
-       
-        
         {data.length>0 
 
          ?
