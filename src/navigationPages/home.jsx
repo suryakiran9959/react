@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Header from "../bootstrapHeader/header"
 import axios from "axios"
 import "./home.css"
 import GrowExample from "./spinner"
 import { Link } from "react-router-dom"
+import { Datashare } from "../navigationStack/main"
 
 
 const Home=()=>{
     const[data,setData]=useState([])
+
+   const response= useContext(Datashare)
+   console.log(response);
     
 
     useEffect(()=>{
@@ -28,7 +32,7 @@ const Home=()=>{
 
          ?
          <>
-         <h1 className="welcome">WELCOME HOME</h1>
+         <h1 className="welcome">WELCOME HOME {response.name}</h1>
         <div className="main">
         {
             

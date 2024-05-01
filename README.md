@@ -1,8 +1,6 @@
-created dynamic routing by basing on changing value like id..
-useParams to collect the data
-route and link used 
-task done i.e viewing the product details..
+global state mng cretaed context and useContext 
 
+we are changing one component name from another component we can pass a object/function globally
 
 
 
