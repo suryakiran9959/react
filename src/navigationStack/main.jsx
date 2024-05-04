@@ -3,18 +3,29 @@ import About from "../navigationPages/about"
 import Home from "../navigationPages/home"
 import ErrorPage from "../navigationPages/ErrorPage"
 import DetailProduct from "../navigationPages/detailProduct"
-import { createContext } from "react"
+import { createContext, useState } from "react"
+import CartsScreen from "../navigationPages/cartsScreen"
 
 export const Datashare=createContext()
 
 const NavigationStack = ()=>{
+    const[cartItems,setCartItems]=useState([])
+
+    const addCartItems=(eachItem)=>{
+        setCartItems([...cartItems,eachItem])
+    }
+    const removeCartItems=(id)=>{
+        
+    }
+
     return(
-        <Datashare.Provider value={{name:"surya"}}>
+        <Datashare.Provider value={{name:"surya",cartItems,addCartItems,removeCartItems}}>
               <BrowserRouter>
        <Routes>
             <Route path="/" Component={Home}/>
             <Route path="/About" Component={About}/>
             <Route  path="*" Component={ErrorPage}/>
+            <Route  path="/cartScreen" Component={CartsScreen}/>
             <Route path=":brand/:id" Component={DetailProduct}/>
 
        </Routes>

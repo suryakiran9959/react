@@ -1,6 +1,8 @@
-global state mng cretaed context and useContext 
+added add to cart functionality and showed count on header..
+20/4/24-- saturday
 
-we are changing one component name from another component we can pass a object/function globally
+pending --
+delete option
 
 
 
