@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import GrowExample from "./spinner"
 
+
 const DetailProduct=()=>{
 const[product,setProduct]=useState({})
 const {id}=useParams()
@@ -24,6 +25,7 @@ const fetchData=async()=>{
 
     return(
         <>
+    
     {product.id==id
     ?
 <>
