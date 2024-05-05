@@ -1,3 +1,12 @@
+
+useMemo -- prevents rerendering and memorizes the value(true/false in this exp)
+
+useCallback-- it also prevents the rerendering and memorizes thhe function itself
+react.memo -- prevents child rerendering as purecomponents topic in class based components
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
