@@ -5,7 +5,6 @@ const One=(props)=>{
         </>
     )
 }
-
 const Greetings=()=>{
     return(
         <>
