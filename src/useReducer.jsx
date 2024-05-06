@@ -23,8 +23,6 @@ const reducerFunction=(state,action)=>{
 
         default :
         return state
- 
-
     }
 
 }
@@ -66,8 +64,6 @@ const changeName=()=>{
         <h1>{currentValue.name}</h1>
         <button onClick={incrementAge}>increment age</button>
         <button onClick={decrementAge}>decrement age</button>
-        <button>increment count</button>
-        <button>decrement count</button>
         <button onClick={changeName}>Change Name</button>
         </>
     )
