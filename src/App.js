@@ -2,6 +2,7 @@
 
 
 import './App.css';
+import Counter11 from './Hooks/1';
 import Counter from './Hooks/useReducer';
 
 import Form from './objects/objects1';
@@ -18,7 +19,8 @@ function App() {
     {/* <CustomButton value="Register"/>
     <CustomButton value="sign IN"/> */}
 
-   <Counter/>
+   {/* <Counter/> */}
+   <Counter11/>
    
     </>
   );
