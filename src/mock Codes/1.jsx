@@ -19,7 +19,6 @@ function Component2() {
 }
 
 function MyComponent() {
-  const navigate=useNav
   const [count, setCount] = useState(0);
 
   // Function to handle count change
@@ -33,13 +32,12 @@ function MyComponent() {
     
   }
  
-
   return (
     <div>
     <h1>{count}</h1>
-    <h1>{count===10&& <Component1/>}</h1>
-     <button onClick={incrementCount}>Increment</button>
-     <button onClick={decrementCount}>Decrement</button>
+    <h1>{count===10 && <Component1/>}</h1>
+    <button onClick={incrementCount}>Increment</button>
+    <button onClick={decrementCount}>Decrement</button>
     </div>
   );
 }
