@@ -8,6 +8,7 @@ import Counter from './Hooks/useReducer';
 import Form from './objects/objects1';
 import Greetings from './props/1';
 import CustomButton from './props/2';
+import UseEffectExp from './useEffect/1';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <CustomButton value="sign IN"/> */}
 
    {/* <Counter/> */}
-   <Counter11/>
+   {/* <Counter11/> */}
+   <UseEffectExp/>
    
     </>
   );
