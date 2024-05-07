@@ -6,7 +6,6 @@ const UseMemo=()=>{
     const [age,setAge]=useState(10)
     const [salary,setSalary]=useState(1000)
 
-
     const ageEvenCalculations= useMemo(()=>{
         console.log("ageEvenCalculations rendering..");
         const even=age%2===0
