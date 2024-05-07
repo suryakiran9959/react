@@ -4,6 +4,7 @@
 import './App.css';
 import Counter11 from './Hooks/1';
 import Counter from './Hooks/useReducer';
+import MyComponent from './mock Codes/1';
 
 import Form from './objects/objects1';
 import Greetings from './props/1';
@@ -22,8 +23,8 @@ function App() {
 
    {/* <Counter/> */}
    {/* <Counter11/> */}
-   <UseEffectExp/>
-   
+   {/* <UseEffectExp/> */}
+   <MyComponent/>
     </>
   );
 }
