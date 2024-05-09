@@ -4,7 +4,7 @@ function Component1() {
   return (
     <div>
       <h2>Component 1</h2>
-      <p>This is Component 1.</p>
+      <p>This is Component 1.(10)</p>
     </div>
   );
 }
@@ -13,7 +13,7 @@ function Component2() {
   return (
     <div>
       <h2>Component 2</h2>
-      <p>This is Component 2.</p>
+      <p>This is Component 2.(-5)</p>
     </div>
   );
 }
@@ -24,7 +24,7 @@ function MyComponent() {
   // Function to handle count change
   const incrementCount=()=>{
     setCount(count+1)
-    
+   
   }
 
   const decrementCount=()=>{
@@ -36,6 +36,7 @@ function MyComponent() {
     <div>
     <h1>{count}</h1>
     <h1>{count===10 && <Component1/>}</h1>
+    <h1>{count==-5 && <Component2/>}</h1>
     <button onClick={incrementCount}>Increment</button>
     <button onClick={decrementCount}>Decrement</button>
     </div>
