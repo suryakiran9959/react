@@ -2,7 +2,7 @@ import { useMemo } from "react"
 import { useState } from "react"
 
 
-const UseMemo=()=>{
+const UseMemoExp=()=>{
     const [age,setAge]=useState(10)
     const [salary,setSalary]=useState(1000)
 
@@ -37,4 +37,4 @@ const UseMemo=()=>{
         </>
     )
 }
-export default UseMemo
+export default UseMemoExp
