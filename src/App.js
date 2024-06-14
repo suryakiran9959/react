@@ -4,6 +4,7 @@
 import './App.css';
 import Counter11 from './Hooks/1';
 import Counter from './Hooks/useReducer';
+import Example from './class/1';
 import MyComponent from './mock Codes/1';
 
 import Form from './objects/objects1';
@@ -27,7 +28,8 @@ function App() {
    {/* <UseEffectExp/> */}
    {/* <MyComponent/> */}
 
-   <NavigationStack/>
+   {/* <NavigationStack/> */}
+   <Example/>
     </>
   );
 }
