@@ -2,19 +2,8 @@
 import { type } from "@testing-library/user-event/dist/type"
 import { useReducer } from "react"
 
-// const initialState={
-//     count:0
-// }
-
-const reducer =(state,action)=>{
-    // switch(action.type){
-    //     case "increment":
-    //         return{count:state.count+1}
-    //     case "decrement":
-    //         return{count:state.count-1}
-    //     default:
-    //         throw new Error("unexpexted action")
-    // }
+const reducer=(state,action)=>{
+   
     if(action.type=="increment"){
         return{count:state.count+1}
     }else if(action.type=="decrement"){
@@ -24,9 +13,8 @@ const reducer =(state,action)=>{
     }
 }
 
-
 const Counter=()=>{
-   const[state,dispatch] = useReducer(reducer, {count:0})
+   const[state,dispatch]=useReducer(reducer,{count:0})
 
 const incrementAge=()=>{
     const action={

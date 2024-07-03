@@ -8,15 +8,10 @@ const NavigationStack=()=>{
         <>
         <BrowserRouter>
         <Routes>
-
-
         <Route path="/" Component={Home}/>
         <Route path="/About" Component={About}/>
-
-
         </Routes>
         </BrowserRouter>
-        
         </>
     )
 }

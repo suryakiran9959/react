@@ -1,12 +1,12 @@
 import { Component } from "react";
 
 class Example extends Component{
-    constructor(){    // - to initialize the state in comp and bind events and methods,auto invoking method
-        super() 
-        this.state={
+   // constructor(){    // - to initialize the state in comp and bind events and methods,auto invoking method
+      //  super() 
+        state={
             name:"a"
         }    
-    }
+   // }
      changeName=()=> {
         this.setState({
             name:"b"

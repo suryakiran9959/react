@@ -6,8 +6,8 @@ const About=()=>{
 
 useEffect(()=>{
     const timer=setInterval(()=>{
-        setCount(preCount=>preCount+1)
-    },500)
+        setCount(count+1)
+    },1000)
     return()=>{
         clearInterval(timer)
     }

@@ -8,7 +8,7 @@ useEffect(()=>{
     const timer =setInterval(()=>{
         console.log("mounting running ");
         setCount(count+1)
-    },500)
+    },5000)
 
     return ()=>{
         clearInterval(timer)
