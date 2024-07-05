@@ -20,5 +20,5 @@ export default function App() {
 }
 
 // def-- State uplifting in React refers to the technique of moving the state to the nearest common ancestor component when multiple child components need to share and synchronize state.
-// lifting state  from child component by clicking button in child1
+// lifting state to parent.from child component by clicking button in child1
 // parent will pass here the props to child
