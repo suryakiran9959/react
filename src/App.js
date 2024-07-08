@@ -1,11 +1,12 @@
 
 import './App.css';
-import Counter from './sampleCodes/counter';
+
+import Two from './useEffect/2';
 
 function App() {
   return (
     <>
-<Counter/>
+  <Two/>
     </>
   );
 }
