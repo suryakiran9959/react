@@ -15,7 +15,7 @@ export default function Exp(){
     return(
         <>
         <label>Name:</label>
-        <input type="text"  value={name} onChange={handleClickName}/>
+        <input type="text" value={name} onChange={handleClickName}/>
         <p>You are Typing Name:{name}</p>
 
         <label>Password:</label>
