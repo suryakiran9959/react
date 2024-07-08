@@ -4,12 +4,12 @@ export default function Counter() {
   const [timer, setTimer] = useState(20);
   const [reset, setReset] = useState(null);
 
-  // useEffect(() => {
-  //   document.body.style.backgroundColor = timer % 2 === 0 ? "green" : "red";
-  //   return () => {
-  //     document.body.style.backgroundColor = ""; // Clean up the style on component unmount
-  //   };
-  // }, [timer]);
+  useEffect(() => {
+    document.body.style.backgroundColor = timer % 2 === 0 ? "green" : "red";
+    return () => {
+      document.body.style.backgroundColor = ""; // Clean up the style on component unmount
+    };
+  }, [timer]);
 
   const startTimer = () => {
     const time = setInterval(() => {
