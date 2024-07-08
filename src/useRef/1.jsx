@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-export default function Exp() {
+export default function Exp1() {
   const ref = useRef(0); // Ref for mutable value
 
   console.log('Component rendered'); // Log when the component renders
