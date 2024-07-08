@@ -1,28 +1,28 @@
 import { useState } from "react"
 
 const UseStateExp3=()=>{
-    const[timer,setTimer]=useState(20)
+    const[timer,setTimer]=useState(100)
     const [reset,setReset]=useState(null)
     
-
-    const startTimer=()=>{ 
+const startTimer=()=>{ 
     
-     const time=setInterval(()=>{
-        setTimer(preTime=>preTime-1)
-        },1000)
-       setReset(time)
-      
-    
+      const time=setInterval(()=>{
+          setTimer(preTime=>preTime-1)
+        },500)
+            setReset(time)   
 }
+
 const stopTimer=()=>{
     clearInterval(reset)
     
 }
+
 const resetTimer=()=>{
     clearInterval(reset)
-    setTimer(20)
+    setTimer(100)
     
 }
+
     return(
         <>
         <h1>useStateExp3</h1>
