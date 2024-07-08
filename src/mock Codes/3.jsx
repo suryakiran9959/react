@@ -16,7 +16,7 @@ const[text,setText]=useState("hello")
 
     return(
         <>
-        <input type={text} onChange={changeText} />
+        <input type="text" onChange={changeText} />
         <p>you typed {text}</p>
         <h1>count:{count}</h1>
         <button onClick={incrementCount}>increment</button>
