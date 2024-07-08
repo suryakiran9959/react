@@ -1,14 +1,11 @@
 
-
-
 import './App.css';
-import Exp from './eventHandlers/1';
-
+import Counter from './sampleCodes/counter';
 
 function App() {
   return (
     <>
- <Exp/>
+<Counter/>
     </>
   );
 }

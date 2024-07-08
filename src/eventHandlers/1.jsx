@@ -28,4 +28,5 @@ export default function Exp(){
 
 // onChange event handler-- used to do something when the user chages/writes in iput filed 
 // it runs on every change 
-// the updated value shows as you are typing..
+// the updated value shows as you are typing.. 
+// it is controlled component
