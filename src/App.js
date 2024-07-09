@@ -1,13 +1,14 @@
 
 import './App.css';
-import UseStateExp from './mock Codes/3';
-import Exp from './useRef/3';
+import Home from './useEffect p.leakages/Home page';
+import NavigationStack from './useEffect p.leakages/navigationStack';
+
 
 
 function App() {
   return (
     <>
-     <UseStateExp/>
+<NavigationStack/>
     </>
   );
 }
