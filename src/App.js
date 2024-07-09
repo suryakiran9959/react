@@ -1,13 +1,10 @@
 
 import './App.css';
-
-
-import UseMemoExp1 from './useMemo/1';
-
+import One from './useCallback/1';
 function App() {
   return (
     <>
-  <UseMemoExp1/> 
+    <One/>
     </>
   );
 }
