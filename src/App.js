@@ -1,12 +1,13 @@
 
 import './App.css';
 
-import Two from './useEffect/2';
+
+import UseMemoExp1 from './useMemo/1';
 
 function App() {
   return (
     <>
-  <Two/>
+  <UseMemoExp1/> 
     </>
   );
 }

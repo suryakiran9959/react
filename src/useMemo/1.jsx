@@ -1,40 +1,34 @@
-import { useMemo } from "react"
-import { useState } from "react"
+import { useMemo } from "react";
+import { useState } from "react";
 
+export default function UseMemoExp1() {
+  const [number, setNumber] = useState(5);
+  const [count, setCount] = useState(0);
 
-const UseMemoExp=()=>{
-    const [age,setAge]=useState(10)
-    const [salary,setSalary]=useState(1000)
+  const factorial = useMemo(() => {
+    return fact(number);
+  }, [number]);
 
-    const ageEvenCalculations= useMemo(()=>{
-        console.log("ageEvenCalculations rendering..");
-        const even=age%2===0
-        return even ? "EVEN" : "ODD"
-    },[age])
-
-    // const ageEvenCalculations=()=>{
-    //     console.log("ageEvenCalculations rendering..");
-    //     const even=age%2===0
-    //     return even ? "EVEN" : "ODD"
-    // }
-
-    const increaseAge=()=>{
-        setAge(age+1)
-    }
-    const increaseSalary=()=>{
-        setSalary(salary+1)
-    }
-
-    return(
-        <>
-        <h1>useMemo example..</h1>
-        <h3>Age calculation:{ageEvenCalculations}</h3>
-        <h4>{age}</h4>
-        <h4>{salary}</h4>
-        <button onClick={increaseAge}>Age increase</button>
-        <button onClick={increaseSalary}>Salary increase</button>
-
-        </>
-    )
+  return (
+    <>
+      <h1>factorial:{factorial}</h1>
+      <button onClick={() => setCount(count + 1)}>Count Up</button> <br />
+      <button onClick={() => setNumber(number + 1)}>Number UP</button>
+      <h1>counter:{count}</h1>
+    </>
+  );
 }
-export default UseMemoExp
+
+function fact(number) {
+  let answer = 1;
+  for (var i = number; i >= 1; i--) {
+    answer = answer * i;
+  }
+  console.log("factorial function calling");
+  return answer;
+}
+
+// useMemo -- prevents rerendering and memorizes the value(true/false in this exp)
+// for calculations we use most 
+// will run during the render of component 
+// returns a memorized value.
