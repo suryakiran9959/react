@@ -13,4 +13,4 @@ const Todos = ({ todos, addTodo }) => {
   );
 };
 
-export default memo(Todos) 
+export default memo(Todos);

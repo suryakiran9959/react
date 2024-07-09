@@ -4,7 +4,7 @@ export default function Ten() {
   const [value, setValue] = useState(0);
 
   const result = useMemo(() => {
-    return (document.body.style.backgroundColor =
+     return(document.body.style.backgroundColor =
       value % 2 == 0 ? "green" : "red");
   }, [value]);
   console.log(result);
