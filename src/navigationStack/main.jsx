@@ -5,6 +5,7 @@ import ErrorPage from "../navigationPages/ErrorPage"
 import DetailProduct from "../navigationPages/detailProduct"
 import { createContext, useState } from "react"
 import CartsScreen from "../navigationPages/cartsScreen"
+import Login from "../loginPage/1"
 
 export const Datashare=createContext()
 
@@ -19,7 +20,7 @@ const NavigationStack = ()=>{
     }
 
     return(
-        <Datashare.Provider value={{name:"surya",cartItems,addCartItems,removeCartItems}}>
+        <Datashare.Provider value={{cartItems,addCartItems,removeCartItems}}>
               <BrowserRouter>
        <Routes>
             <Route path="/" Component={Home}/>

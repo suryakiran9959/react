@@ -34,7 +34,7 @@ const Home=()=>{
 
          ?
          <>
-         <h1 className="welcome">WELCOME HOME {response.name}</h1>
+         <h1 className="welcome">WELCOME HOME</h1>
         <div className="main">
         {
             
