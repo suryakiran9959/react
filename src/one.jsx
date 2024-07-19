@@ -24,7 +24,6 @@ export function One() {
   return (
     <>
       <center>
-        {" "}
         <h1>Essane Tech</h1>
       </center>
 
