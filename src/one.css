@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: cadetblue;
+}
+.child{
+    border:2px solid black;
+    border-radius: 10px;
+    
+}
