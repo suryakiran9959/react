@@ -20,19 +20,21 @@ export function One() {
     }
   };
 
-  console.log("data", data);
 
   return (
     <>
-    <center> <h1>Alumns of Law College</h1></center>
+    <center> <h1>Essane Tech</h1></center>
      
     <div className="main">
 
       {data.map((eachData,id) => (
-        <div className="child" key={eachData.id}>
-          <img src="../asets/1.jpeg" alt="Profile" />
-          <p>{eachData.email}</p>
-          <p>{eachData.company.catchPhrase}</p>
+
+        <div className="child">
+          <div className="img"><img src={`/asets/${id}.jpeg`} alt="q"/></div>
+          <h5>{eachData.name}</h5>
+          <h6>{eachData.email}</h6>
+          <h6>{eachData.company.catchPhrase}</h6>
+          
         </div>
       ))}
 
