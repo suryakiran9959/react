@@ -1,10 +1,11 @@
-import { Exp } from "./1";
+
 import "./App.css";
+import Exp1 from "./login";
 
 function App() {
   return(
   <>
-  
+  <Exp1/>
   </>
   )
 }
