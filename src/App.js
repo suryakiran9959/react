@@ -2,9 +2,11 @@ import { Exp } from "./1";
 import "./App.css";
 
 function App() {
-  return <>
-  <Exp/>
-  </>;
+  return(
+  <>
+  
+  </>
+  )
 }
 
 export default App;
