@@ -20,6 +20,7 @@ function Form() {
             ...person,password:e.target.value
         })
     }
+
     const handleEmailChange=(e)=>{
          setPerson({
             ...person,Email:e.target.value
