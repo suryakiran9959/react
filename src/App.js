@@ -1,12 +1,11 @@
 
 import "./App.css";
-import Exp from "./one";
-
+import One from "./one";
 
 function App() {
   return(
   <>
-
+  <One/>
   </>
   )
 }
