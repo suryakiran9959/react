@@ -8,9 +8,9 @@ export function Search({sendFunction}){
 const fetchData=async(typedValue)=>{
     const response=await axios.get("https://jsonplaceholder.typicode.com/users")
     const response1=response.data.filter((user)=>(
-        user && user.name && user.name.toLowerCase().includes(typedValue.toLowerCase())
-        
-    ))
+        user && user.name && user.name.toLowerCase().includes(typedValue.toLowerCase()) 
+    )) 
+    
     sendFunction(response1)
     console.log(response1)
 
