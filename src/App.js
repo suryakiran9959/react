@@ -1,11 +1,11 @@
 
 import "./App.css";
-import One from "./one";
+import Parent from "./useCallback";
 
 function App() {
   return(
   <>
-  <One/>
+ <Parent/>
   </>
   )
 }
