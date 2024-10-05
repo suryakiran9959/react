@@ -1,12 +1,16 @@
 
 import "./App.css";
-import Parent from "./useCallback";
+
+import Stack from "./stack";
+
+
+
 
 function App() {
   return(
   <>
- <Parent/>
-  </>
+<Stack/>
+</>
   )
 }
 
