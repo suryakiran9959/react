@@ -1,17 +1,12 @@
-
 import "./App.css";
-
-import Stack from "./stack";
-
-
-
+import One from "./one";
 
 function App() {
   return(
-  <>
-<Stack/>
-</>
-  )
+    <>
+   <One/>
+   </>
+  ) 
 }
 
 export default App;
