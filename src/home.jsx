@@ -1,5 +1,4 @@
 import { auth } from "./firebase";
-
 export function Home({presentUser}){
     
     return(

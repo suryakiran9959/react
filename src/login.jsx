@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { auth } from "./firebase"; // Import auth from firebase.js
+
+import { auth } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; // Import the function
 
 function Exp1() {
@@ -17,14 +18,14 @@ function Exp1() {
         console.log(userCredential.user);
       })
       .catch((err) => {
-        console.log("Error from login:", err); // Log the entire error object
+        console.log("Error from login:", err);
 
         if (err.code === "auth/user-not-found") {
           alert("You are not signed up. Please sign up first!");
         } else if (err.code === "auth/invalid-credential") {
-          alert("You entered invalid credentials! Please re-enter correctly.");
+          alert("You entered invalid credentials! or please Sign up if you are new.");
         } else {
-          console.log("Unhandled error:", err.message); // Log error message
+          console.log("Unhandled error:", err.message); 
         }
       });
   };
@@ -36,11 +37,11 @@ function Exp1() {
         console.log(userCredential.user);
       })
       .catch((err) => {
-        console.log("Error from signup:", err); // Log the entire error object
+        console.log("Error from signup:", err); 
         if (err.code === "auth/email-already-in-use") {
-          alert("Email already in use. Please log in.");
+          alert("Email already in use. Please login with different e-mail.");
         } else {
-          console.log("Unhandled error:", err.message); // Log error message
+          console.log("Unhandled error:", err.message); 
         }
       });
   };
